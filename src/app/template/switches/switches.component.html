@@ -77,7 +77,14 @@
 
   <div class="row">
     <div class="col">
-      <button [disabled]="miFormulario.invalid" class="btn btn-primary"type="button" class="btn btn-primary float-end">Guardar</button>
+      <button
+        [disabled]="miFormulario.invalid"
+        class="btn btn-primary"
+        type="button"
+        class="btn btn-primary float-end"
+      >
+        Guardar
+      </button>
     </div>
   </div>
 </form>
@@ -85,14 +92,14 @@
 <pre>{{ miFormulario.value | json }}</pre>
 <br />
 <span class="">persona</span>
-<pre>{{ persona| json }}</pre>
+<pre>{{ persona | json }}</pre>
 <br />
 <span class="">Valid formulario</span>
 <pre>{{ miFormulario.valid | json }}</pre>
 <br />
 <span class="">Errors</span>
-<pre>{{ miFormulario.controls['terminos']?.errors | json }}</pre>
+<pre>{{ miFormulario.controls["terminos"]?.errors | json }}</pre>
 <br />
 <span class="">condiciones formulario</span>
-<pre>{{ miFormulario.controls['terminos']?.errors | json }}</pre>
+<pre>{{ miFormulario.controls["terminos"]?.errors | json }}</pre>
 <br />
